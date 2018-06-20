@@ -1,5 +1,7 @@
 package codecheck;
 
+import jp.co.jal.jalcard.myjalcard.a;
+
 
 public class App {
 	public static void main(String[] args) {
@@ -9,47 +11,58 @@ public class App {
 		String input = args[1];
 
 		StringBuilder str = new StringBuilder();;
+		double jou = input.length()-1;
+		double output = 0;
 
 		for (int i = 0; i < input.length(); i++) {
-		    // strの先頭から1文字ずつString型にして取り出す
-		    String str2 = String.valueOf(input.charAt(i));
-		    String outstr = "";
-		    switch(str2){
-		    case "A" :
-		    	outstr = "0";
-		    	break;
-		    case "B" :
-		    	outstr =  "1";
-		    	break;
-		    case "C" :
-		    	outstr =  "2";
-		    	break;
-		    case "D" :
-		    	outstr =  "3";
-		    	break;
-		    case "E" :
-		    	outstr =  "4";
-		    	break;
-		    case "F" :
-		    	outstr =  "5";
-		    	break;
-		    case "G" :
-		    	outstr =  "6";
-		    	break;
-		    case "H" :
-		    	outstr =  "7";
-		    	break;
-		    case "I" :
-		    	outstr =  "8";
-		    	break;
-		    }
 
-		    // 配列に順番に格納する
-//		    str.append(re_in8);
-		    System.out.println(str2 + ":" + outstr);
+			String str2 = String.valueOf(input.charAt(i));
+		    int re_in8 = Integer.parseInt(return_int8(str2));
+
+
+		    double num = Math.pow(re_in8, jou);
+
+
+		    output += num;
+
+		    System.out.println(str2+ ":" + re_in8 + "*" +jou + ":" +num + ":" +output );
+
+		    jou--;
 		}
 	}
 
+	private static String return_int8(String input_A) {
 
-
+		String return_str8 = "";
+	    switch(input_A){
+	    case "A" :
+	    	return_str8 = "0";
+	    	break;
+	    case "B" :
+	    	return_str8 =  "1";
+	    	break;
+	    case "C" :
+	    	return_str8 =  "2";
+	    	break;
+	    case "D" :
+	    	return_str8 =  "3";
+	    	break;
+	    case "E" :
+	    	return_str8 =  "4";
+	    	break;
+	    case "F" :
+	    	return_str8 =  "5";a
+	    	break;
+	    case "G" :
+	    	return_str8 =  "6";
+	    	break;
+	    case "H" :
+	    	return_str8 =  "7";
+	    	break;
+	    case "I" :
+	    	return_str8 =  "8";
+	    	break;
+	    }
+	    return return_str8;
+	}
 }

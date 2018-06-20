@@ -15,7 +15,7 @@ public class App {
 
 			String[] strArray = new String[input.length()];
 
-			for (int i = 0; i < input.length(); i++) {
+			for (int i = input.length(); i <= 0; i--) {
 			    // strの先頭から1文字ずつString型にして取り出す
 			    String str2 = String.valueOf(input.charAt(i));
 			    // 配列に順番に格納する

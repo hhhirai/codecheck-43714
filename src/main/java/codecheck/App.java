@@ -8,8 +8,6 @@ public class App {
 		String subcmd = args[0];
 		String input = args[1];
 
-		System.out.println(subcmd);
-
 		if("decode".equals(subcmd)){
 			double jou = input.length()-1;
 			double out_decode = 0;
@@ -35,12 +33,13 @@ public class App {
 		}else if("encode".equals(subcmd)){
 
 		    int input_i = Integer.parseInt(input);
-		    String oct = Integer.toOctalString(input_i);
+		    int n = 9;
+		    String base9 = Integer.toString(input_i, n);
 		    StringBuilder out_encode = new StringBuilder();
 
 		    for (int i = 0; i < input.length(); i++) {
 
-				String str2 = String.valueOf(input.charAt(i));
+				String str2 = String.valueOf(base9.charAt(i));
 				out_encode.append(return_A(str2));
 		    }
 		    System.out.println(out_encode.toString());

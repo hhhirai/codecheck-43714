@@ -10,7 +10,7 @@ public class App {
 
 		System.out.println(subcmd);
 
-		if(subcmd == "decode"){
+		if("decode".equals(subcmd)){
 			double jou = input.length()-1;
 			double out_decode = 0;
 
@@ -32,7 +32,7 @@ public class App {
 			}
 		    System.out.println(out_decode);
 
-		}else if(subcmd == "encode"){
+		}else if("encode".equals(subcmd)){
 
 		    int input_i = Integer.parseInt(input);
 		    String oct = Integer.toOctalString(input_i);

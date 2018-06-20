@@ -13,39 +13,34 @@ public class App {
 		for (int i = 0; i < input.length(); i++) {
 		    // strの先頭から1文字ずつString型にして取り出す
 		    String str2 = input.charAt(i);
-		    String re_in8 = return_int8(str2);
 
-
+		    switch(str2){
+		    case "A" : str2 = "0";
+		    case "B" : str2 =  "1";
+		    case "C" : str2 =  "2";
+		    case "D" : str2 =  "3";
+		    case "E" : str2 =  "4";
+		    case "F" : str2 =  "5";
+		    case "G" : str2 =  "6";
+		    case "H" : str2 =  "7";
+		    case "I" : str2 =  "8";
+		    case "a" : str2 =  "0";
+		    case "b" : str2 =  "1";
+		    case "c" : str2 =  "2";
+		    case "d" : str2 =  "3";
+		    case "e" : str2 =  "4";
+		    case "f" : str2 =  "5";
+		    case "g" : str2 =  "6";
+		    case "h" : str2 =  "7";
+		    case "i" : str2 =  "8";
+		    }
 
 		    // 配列に順番に格納する
 //		    str.append(re_in8);
-		    System.out.println(re_in8);
+		    System.out.println(str2);
 		}
 	}
 
 
-	private static String return_int8(char input_A) {
 
-	    switch( input_A ){
-	    case 'A' : return "0";
-	    case 'B' : return "1";
-	    case 'C' : return "2";
-	    case 'D' : return "3";
-	    case 'E' : return "4";
-	    case 'F' : return "5";
-	    case 'G' : return "6";
-	    case 'H' : return "7";
-	    case 'I' : return "8";
-	    case 'a' : return "0";
-	    case 'b' : return "1";
-	    case 'c' : return "2";
-	    case 'd' : return "3";
-	    case 'e' : return "4";
-	    case 'f' : return "5";
-	    case 'g' : return "6";
-	    case 'h' : return "7";
-	    case 'i' : return "8";
-	    }
-	    return new String( new char[]{ input_A } ) ;
-	}
 }

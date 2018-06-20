@@ -26,11 +26,9 @@ public class App {
 		    }
 
 		    output += num;
-
-		    System.out.println(output);
-
 		    jou--;
 		}
+	    System.out.println(output);
 	}
 
 	private static String return_int8(String input_A) {

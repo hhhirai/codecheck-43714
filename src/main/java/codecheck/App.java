@@ -18,16 +18,16 @@ public class App {
 		    int re_in8 = Integer.parseInt(return_int8(str2));
 
 
-		    double num = 0;
+		    int num = 0;
 		    if(jou == 0){
 		    	num = re_in8;
 		    }else{
-		    	num = re_in8 * Math.pow(9, jou);
+		    	num = (int) (re_in8 * Math.pow(9, jou));
 		    }
 
 		    output += num;
 
-		    System.out.println(str2+ ":" + re_in8 + "*" +jou + ":" +num + ":" +output );
+		    System.out.println(output);
 
 		    jou--;
 		}

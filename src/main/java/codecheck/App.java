@@ -1,7 +1,6 @@
 package codecheck;
 
 
-
 public class App {
 	public static void main(String[] args) {
 
@@ -19,8 +18,12 @@ public class App {
 		    int re_in8 = Integer.parseInt(return_int8(str2));
 
 
-		    double num = Math.pow(re_in8, jou);
-
+		    double num = 0;
+		    if(jou == 0){
+		    	num = re_in8;
+		    }else{
+		    	num = re_in8 * Math.pow(9, jou);
+		    }
 
 		    output += num;
 

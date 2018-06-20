@@ -15,14 +15,14 @@ public class App {
 			for (int i = 0; i < input.length(); i++) {
 
 				String str2 = String.valueOf(input.charAt(i));
-			    int re_int8 = Integer.parseInt(return_int8(str2));
+				double re_int8 = Double.parseDouble(return_int8(str2));
 
 
 			    double num = 0;
 			    if(jou == 0){
 			    	num = re_int8;
 			    }else{
-			    	num = (int) (re_int8 * Math.pow(9, jou));
+			    	num = re_int8 * Math.pow(9, jou);
 			    }
 
 			    out_decode += num;

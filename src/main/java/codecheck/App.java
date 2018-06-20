@@ -19,13 +19,13 @@ public class App {
 
 		    // 配列に順番に格納する
 		    str.append(re_in8);
-		    System.out.println(new String(re_in8));
+		    System.out.println(re_in8);
 		}
 	}
 
 	private static String return_int8(String input_A) {
 
-	    switch( input_A ){
+	    switch(input_A){
 	    case "A" : return "0";
 	    case "B" : return "1";
 	    case "C" : return "2";

@@ -46,5 +46,6 @@ public class App {
 	    case 'h' : return "7";
 	    case 'i' : return "8";
 	    }
+	    return new String( new char[]{ input_A } ) ;
 	}
 }

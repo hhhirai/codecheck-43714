@@ -1,6 +1,5 @@
 package codecheck;
 
-import jp.co.jal.jalcard.myjalcard.a;
 
 
 public class App {

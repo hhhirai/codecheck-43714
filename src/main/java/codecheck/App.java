@@ -18,7 +18,7 @@ public class App {
 			    int re_int8 = Integer.parseInt(return_int8(str2));
 
 
-			    int num = 0;
+			    double num = 0;
 			    if(jou == 0){
 			    	num = re_int8;
 			    }else{

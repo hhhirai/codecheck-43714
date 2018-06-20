@@ -1,10 +1,35 @@
 package codecheck;
 
+import java.text.Normalizer;
+import java.util.ArrayList;
+
 public class App {
 	public static void main(String[] args) {
-		for (int i = 0, l = args.length; i < l; i++) {
-			String output = String.format("argv[%s]: %s", i, args[i]);
-			System.out.println(output);
-		}
+
+
+		String subcmd = args[0];
+		String input = args[1];
+
+//		if (subcmd == "decode"){
+//
+//
+//		} else {
+
+			String[] strArray = new String[input.length()];
+
+			for (int i = input.length(); i < 0; i--) {
+			    // strの先頭から1文字ずつString型にして取り出す
+			    String str2 = String.valueOf(input.charAt(i));
+			    // 配列に順番に格納する
+			    strArray[i] = str2;
+			    System.out.println(str2);
+			}
+//		}
+//			if (subcmd == "align"){
+//
+//
+//		} else if (subcmd == "encode"){
+//
+//		}
 	}
 }

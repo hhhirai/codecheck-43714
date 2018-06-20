@@ -12,7 +12,7 @@ public class App {
 
 		for (int i = 0; i < input.length(); i++) {
 		    // strの先頭から1文字ずつString型にして取り出す
-		    String str2 = String.valueOf(nput.charAt(i);
+		    String str2 = String.valueOf(nput.charAt(i));
 
 		    switch(str2){
 		    case "A" : str2 = "0";

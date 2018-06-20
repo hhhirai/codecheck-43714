@@ -51,7 +51,7 @@ public class App {
 	    	return_str8 =  "4";
 	    	break;
 	    case "F" :
-	    	return_str8 =  "5";a
+	    	return_str8 =  "5";
 	    	break;
 	    case "G" :
 	    	return_str8 =  "6";

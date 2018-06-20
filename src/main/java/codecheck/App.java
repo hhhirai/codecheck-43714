@@ -1,7 +1,5 @@
 package codecheck;
 
-import java.text.Normalizer;
-import java.util.ArrayList;
 
 public class App {
 	public static void main(String[] args) {
@@ -17,7 +15,7 @@ public class App {
 
 			String[] strArray = new String[input.length()];
 
-			for (int i = input.length(); i < 0; i--) {
+			for (int i = 0; i < input.length(); i++) {
 			    // strの先頭から1文字ずつString型にして取り出す
 			    String str2 = String.valueOf(input.charAt(i));
 			    // 配列に順番に格納する

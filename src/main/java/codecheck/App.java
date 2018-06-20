@@ -8,6 +8,8 @@ public class App {
 		String subcmd = args[0];
 		String input = args[1];
 
+		System.out.println(subcmd);
+
 		if(subcmd == "decode"){
 			double jou = input.length()-1;
 			double out_decode = 0;
